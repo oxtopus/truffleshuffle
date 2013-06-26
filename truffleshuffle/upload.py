@@ -46,7 +46,7 @@ from boto.s3.connection import S3Connection
 Defaults
 """
 DEFAULT_CHUNK_SIZE = 5242880
-DEFAULT_NUM_PROCESSES = 5
+DEFAULT_NUM_PROCESSES = 2
 
 """
 CLI options
