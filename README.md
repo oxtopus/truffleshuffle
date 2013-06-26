@@ -2,6 +2,7 @@ truffleshuffle
 ==============
 
 Command line utility for uploading large files to AWS S3 via [Multipart Upload](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRESTAPImpUpload.html)
+w/ configurable concurrency and chunk size.
 
 Install
 -------
@@ -15,16 +16,16 @@ Install via setup.py:
 
     python setup.py install
 
-or [easy_install](http://pythonhosted.org/distribute/easy_install.html):
+...or [easy_install](http://pythonhosted.org/distribute/easy_install.html):
 
     easy_install .
 
-or [pip](http://www.pip-installer.org/en/latest/):
+...or [pip](http://www.pip-installer.org/en/latest/):
 
     pip install .
 
-Alternatively, you can invoke the upload module in the truffleshuffle package
-directly:
+Alternatively, you can invoke the ``upload`` module in the ``truffleshuffle`` 
+package directly:
 
     python -m truffleshuffle.upload
 
@@ -35,6 +36,6 @@ Once installed, you can use the ``upload-s3-multipart`` CLI utility:
 
     upload-s3-multipart --help
 
-[boto](http://boto.readthedocs.org/en/latest/) is required.  See 
+[Boto](http://boto.readthedocs.org/en/latest/) is required.  See 
 [Boto Config](http://boto.readthedocs.org/en/latest/boto_config_tut.html) for 
 configuration instructions.
