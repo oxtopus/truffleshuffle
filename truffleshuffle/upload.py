@@ -168,7 +168,12 @@ def main():
 
   logging.basicConfig(level=getattr(logging, options.log.upper()))
 
-  target, bucket, = args[:2] # First two CLI args
+  try:
+    target, bucket, = args[:2] # First two CLI args
+  
+  except ValueError:
+    parser.print_help()
+    sys.exit()
 
   upload(target, bucket,
     processes=options.processes,

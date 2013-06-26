@@ -15,13 +15,18 @@ Install via setup.py:
 
     python setup.py install
 
-or easy_install:
+or [easy_install](http://pythonhosted.org/distribute/easy_install.html):
 
     easy_install .
 
-or pip:
+or [pip](http://www.pip-installer.org/en/latest/):
 
     pip install .
+
+Alternatively, you can invoke the upload module in the truffleshuffle package
+directly:
+
+    python -m truffleshuffle.upload
 
 Usage
 -----
