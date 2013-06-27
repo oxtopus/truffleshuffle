@@ -9,7 +9,7 @@ Usage:
     upload-s3-multipart [options] path bucket
 
 Copyright 2013 Austin Marshall
-https://github.com/oxtopus/ercot
+https://github.com/oxtopus/truffleshuffle
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

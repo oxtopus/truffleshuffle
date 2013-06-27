@@ -34,7 +34,18 @@ Usage
 
 Once installed, you can use the ``upload-s3-multipart`` CLI utility:
 
-    upload-s3-multipart --help
+    $ upload-s3-multipart --help
+    Usage: upload-s3-multipart [options] target bucket
+
+    Options:
+      -h, --help            show this help message and exit
+      -l LEVEL, --log=LEVEL
+                            Log level [Default: INFO]
+      -p NUM, --processes=NUM
+                            Number of concurrent downloads [Default: 2]
+      -k key, --key=key     S3 Key
+      -c BYTES, -s BYTES, --chunk=BYTES, --size=BYTES
+                            Chunk size (in bytes) [Default: 5242880]
 
 [Boto](http://boto.readthedocs.org/en/latest/) is required.  See 
 [Boto Config](http://boto.readthedocs.org/en/latest/boto_config_tut.html) for 
